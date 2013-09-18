@@ -22,6 +22,7 @@ public class TestController {
 	@ResponseBody
 	public ModelAndView test(ModelAndView model){
 		model.addObject("test", "attributeValue");
+		model.addObject("hello", "yes");
 		model.addObject("user", userService.getUserByUN("121212"));
 		return model;
 	}
